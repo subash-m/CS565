@@ -50,4 +50,13 @@ The models will be generated under
 
 Model save location can be modified by making change in line 179 of single.py by giving path as ./models/models-10k/task-{}/model.ckpt".format(FLAGS.task_id).
 
+### Joint Training
 
+```
+# Train all the tasks from 1k Dataset
+python joint.py
+```
+To train the model from 10k dataset.
+```
+python joint.py --data_dir data/tasks_1-20_v1-2/en-10k
+```
