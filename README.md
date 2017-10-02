@@ -47,6 +47,7 @@ bash train_allTask_single.sh
 The models will be generated under 
  - models/models-1k/task-<ID> folder for each task for 1k dataset.
  - models/models-10k/task-<ID> folder for each task for 10k dataset
+
 Model save location can be modified by making change in line 179 of single.py by giving path as ./models/models-10k/task-{}/model.ckpt".format(FLAGS.task_id).
 
 
