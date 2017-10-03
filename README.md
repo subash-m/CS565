@@ -48,7 +48,7 @@ The models will be generated under
  - models/models-1k/task-<ID> folder for each task for 1k dataset.
  - models/models-10k/task-<ID> folder for each task for 10k dataset
 
-Model save location can be modified by making change in line 179 of single.py by giving path as ./models/models-10k/task-{}/model.ckpt".format(FLAGS.task_id).
+The Model save location can be modified by making change in line 174 of single.py by giving path as ./models/models-10k/task-{}/model.ckpt".format(FLAGS.task_id).
 
 ### Joint Training
 
@@ -60,3 +60,28 @@ To train the model from 10k dataset.
 ```
 python joint.py --data_dir data/tasks_1-20_v1-2/en-10k
 ```
+The models will be generated under
+ - models/models-1k/joint folder for each task for 1k dataset
+ - models/models-10k/joint folder for each task for 10k dataset
+
+The Model save location can be modified by making change in line 216 of joint.py by giving path as "./models/models-10k/joint/model.ckpt".
+
+### Logging
+
+All the log files will be generated in logs directory
+
+ - The final accuracy score for 1k dataset will be generated in project home directory as "single_scores.csv" file.
+ - The final accuracy score for 10k dataset will be generated in logs directory as csv file.
+
+## Webapp
+
+For demonstration purpose, we have created a simple webapp which populates randomly selected stories from dataset and initially a related question. A user can change to other question related to the given story and predict the output. User can also populate different story by clicking on Get new story button. It evaluates the question on given story based on a pre trained model. 
+
+Before running the below code , make sure "./models/joint/" folder has some model populated or train the join model.
+```
+python webapp.py
+#Go to browser and open 127.0.0.1:5000
+```
+
+## Output
+Output folder has some results generated as part of training.
