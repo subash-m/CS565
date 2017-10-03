@@ -2,15 +2,31 @@
 
 This repo contains the implementation of [Key Value Memory Networks for Directly Reading Documents](https://arxiv.org/abs/1606.03126) in Tensorflow. The model is tested on [bAbI](http://arxiv.org/abs/1502.05698).
 
-## Output and Results
+## Output
  - The story is generated dynamically from the Dataset.
  - Question section will be initially filled with a question relevant to the story.
  - The user can change the question related to the given story and predict the output.
  
 <div class="display: inline-block; float: left;">
- <img src="https://drive.google.com/file/d/0Bws2eZr3bt67TzF2QXpSZldRdmc/view?usp=sharing" width="436px">
- <img src="https://drive.google.com/open?id=0Bws2eZr3bt67VkpfVzBEUmM1WFk" width="436px">
+ <img src="/output/1.png" width="436px" alt="Result 1">
+ <img src="/output/r2.png" width="436px" alt="Result 2">
 </div>
+
+## Results
+After training the model with 1k dataset for 100 epoch by individually and in joint mode, we found that many tasks are performing with less than 90% of accuracy, whereas their performance is better in case of individual training.
+
+
+<img src="/output/1K.png" alt="Performance of QA model with 1K Dataset">
+
+After training the model with 10k dataset for 200 epoch the performance of many tasks has crossed more than 90%. Only few tasks like "path_finding" and "where_was_object" are failing very badly due to the rigorous dependency on the previous facts(sentences).
+
+
+<img src="/output/10K.png" alt="Performance of QA model with 10K Dataset" >
+
+Performance Comparison between BoW and GRU (Feature embedding methods)
+
+
+<img src="/output/result.PNG" alt="Performance Comparison between BoW and GRU" >
 
 ## Requirements
 
