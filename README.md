@@ -6,7 +6,10 @@ This repo contains the implementation of [Key Value Memory Networks for Directly
  - The story is generated dynamically from the Dataset.
  - Question section will be initially filled with a question relevant to the story.
  - The user can change the question related to the given story and predict the output.
-<img src="/output/1.png" width="500px"><img src="/output/2.png" width="500px">
+<div class="display: inline-block; float: left;">
+ <img src="/output/1.png" width="500px">
+ <img src="/output/2.png" width="500px">
+</div>
 
 ## Requirements
 
