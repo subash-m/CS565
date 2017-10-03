@@ -8,8 +8,8 @@ This repo contains the implementation of [Key Value Memory Networks for Directly
  - The user can change the question related to the given story and predict the output.
  
 <div class="display: inline-block; float: left;">
- <img src="/output/1.png" width="436px">
- <img src="/output/2.png" width="436px">
+ <img src="https://drive.google.com/file/d/0Bws2eZr3bt67TzF2QXpSZldRdmc/view?usp=sharing" width="436px">
+ <img src="https://drive.google.com/open?id=0Bws2eZr3bt67VkpfVzBEUmM1WFk" width="436px">
 </div>
 
 ## Requirements
