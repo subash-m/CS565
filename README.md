@@ -17,13 +17,14 @@ After training the model with 1k dataset for 100 epoch by individually and in jo
 
 
 <img src="/output/1K.png" alt="Performance of QA model with 1K Dataset">
+<hr>
 
 After training the model with 10k dataset for 200 epoch the performance of many tasks has crossed more than 90%. Only few tasks like "path_finding" and "where_was_object" are failing very badly due to the rigorous dependency on the previous facts(sentences).
 
 
 <img src="/output/10K.png" alt="Performance of QA model with 10K Dataset" >
 
-Performance Comparison between BoW and GRU (Feature embedding methods)
+### Performance Comparison between BoW and GRU (Feature embedding methods)
 
 
 <img src="/output/result.PNG" alt="Performance Comparison between BoW and GRU" >
